@@ -6,7 +6,11 @@ public class Main {
         System.out.println("jvm-sandbox ready — Java " + Runtime.version());
 //        runReadWriteLockDemo(args);
 //        runReentrantReadWriteLockDemo(args);
-        runStampedLockDemo(args);
+//        runStampedLockDemo(args);
+//        runSemaphoreDemo();
+//        runLongAdderDemo();
+//        runCountDownLatchDemo();
+        runCyclicBarrierDemo();
     }
 
     public static void runReadWriteLockDemo(String[] args) {
@@ -26,5 +30,29 @@ public class Main {
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
+    }
+
+    public static void runSemaphoreDemo() {
+        new SemaphoreDemo().run();
+    }
+
+    public static void runLongAdderDemo() {
+        try {
+            new LongAdderDemo().run();
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    public static void runCountDownLatchDemo() {
+        try {
+            new CountDownLatchDemo().run();
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    public static void runCyclicBarrierDemo() {
+        new CyclicBarrierDemo().run();
     }
 }
