@@ -1,6 +1,6 @@
 package org.example;
 
-import org.example.problems.SemanticVersionCompare;
+import org.example.problems.SemanticVersionCompareJ;
 
 public class Main {
     public static void main(String[] args) {
@@ -17,7 +17,7 @@ public class Main {
     }
 
     public static void runSemanticVersionCompare() {
-        SemanticVersionCompare cls = new SemanticVersionCompare();
+        SemanticVersionCompareJ cls = new SemanticVersionCompareJ();
         cls.test();
     }
 

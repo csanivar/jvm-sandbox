@@ -3,7 +3,7 @@ package org.example.problems;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class SemanticVersionCompare {
+public class SemanticVersionCompareJ {
 
     private static final class Version implements Comparable<Version> {
         String val;
