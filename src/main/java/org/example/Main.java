@@ -1,5 +1,7 @@
 package org.example;
 
+import org.example.problems.SemanticVersionCompare;
+
 public class Main {
     public static void main(String[] args) {
 
@@ -10,7 +12,13 @@ public class Main {
 //        runSemaphoreDemo();
 //        runLongAdderDemo();
 //        runCountDownLatchDemo();
-        runCyclicBarrierDemo();
+//        runCyclicBarrierDemo();
+        runSemanticVersionCompare();
+    }
+
+    public static void runSemanticVersionCompare() {
+        SemanticVersionCompare cls = new SemanticVersionCompare();
+        cls.test();
     }
 
     public static void runReadWriteLockDemo(String[] args) {
